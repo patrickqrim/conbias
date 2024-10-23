@@ -1,6 +1,6 @@
 ## Datasets
 
-We use [Waterbirds](https://github.com/anniesch/jtt/tree/master), [UrbanCars](https://github.com/facebookresearch/Whac-A-Mole), and [Coco-GB]((https://github.com/datamllab/Mitigating_Gender_Bias_In_Captioning_System). Modify the paths in the scripts below to the location where you have saved these datasets. 
+We use [Waterbirds](https://github.com/anniesch/jtt/tree/master), [UrbanCars](https://github.com/facebookresearch/Whac-A-Mole), and [Coco-GB](https://github.com/datamllab/Mitigating_Gender_Bias_In_Captioning_System). Modify the paths in the scripts below to the location where you have saved these datasets. 
 
 
 ## Cliques
