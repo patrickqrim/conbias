@@ -1,5 +1,5 @@
 # ConBias
-This repository contains code for the paper titled "Visual Data Diagnosis and Debiasing with Concept Graphs",to appear in _Advances in Neural Information Processing Systems (NeurIPS), 2024._
+This repository contains code for the paper titled "Visual Data Diagnosis and Debiasing with Concept Graphs", to appear in _Advances in Neural Information Processing Systems (NeurIPS), 2024._
 
 _**Abstract**_ - 
 _The widespread success of deep learning models today is owed to the curation of extensive datasets significant in size and complexity. However, such models frequently pick up inherent biases in the data during the training process, leading to unreliable predictions. Diagnosing and debiasing datasets is thus a necessity to ensure reliable model performance. In this paper, we present CONBIAS, a novel framework for diagnosing and mitigating Concept co-occurrence Biases in visual datasets. CONBIAS represents visual datasets as knowledge graphs of concepts, enabling meticulous analysis of spurious concept co-occurrences to uncover concept imbalances across the whole dataset. Moreover, we show that by employing a novel clique-based concept balancing strategy, we can mitigate these imbalances, leading to enhanced performance on downstream tasks. Extensive experiments show that data augmentation based on a balanced concept distribution augmented by CONBIAS improves generalization performance across multiple datasets compared to state-of-the-art methods. We will make our code and data publicly available._
@@ -15,9 +15,9 @@ In the metadata directory we already provide the files needed to construct the i
 
 For each dataset, we have:
 
-1. clique_dict_final_coco.pkl: The cliques for COCO-GB 
-2. clique_dict_final.pkl: The cliques for Waterbirds
-3. clique_dict_final_urbancars.pkl: The cliques for Urbancars
+1. ```clique_dict_final_coco.pkl```: The cliques for COCO-GB 
+2. ```clique_dict_final.pkl```: The cliques for Waterbirds
+3. ```clique_dict_final_urbancars.pkl```: The cliques for Urbancars
 
 To create the imbalanced clique set, we can simply run:
 ```
