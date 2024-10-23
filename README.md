@@ -1,4 +1,5 @@
-# datadebias
+
+## Cliques
 
 In the metadata directory we already provide the files needed to construct the imbalanced clique sets.
 
@@ -14,6 +15,8 @@ python src/concept_sampler.py --clique_file_name
 
 The output of this file is a .json file containing the concept combinations to be up-sampled. 
 
+##Concepts 
+
 The metadata directory contains these files as well:
 
 1. concepts_generation.json: Concepts to be sampled for Waterbirds
@@ -22,23 +25,28 @@ The metadata directory contains these files as well:
    
 To create the co-occurrences, we use src/co_occurence.py and src/co_occurrence_cliques.py. 
 
+##Co-occurrences
+
 The co-occurrence code for Waterbirds, COCO-GB, and UrbanCars are a bit different due to 
 the different nature of the metadata, i.e. we need different ways to extract the concepts stored
 in the annotations. Therefore, we also share the different csv files for each dataset, i.e. 
 co_occurrence_matrix_coco.csv, co_occurrence_matrix_urbancars.csv, co_occurrence_matrix_waterbirds.csv.
 For these particular datasets, the csv files and the code are not required.
 
+##Training and evaluation
+
 To train ConBias, run
-
+```
 python src/train.py --dataset <datname> --augmentation --method conbias --checkpoint_path <ckpt_path>
-
+```
 To evaluate CB, run
-
+```
 python src/evaluate.py --checkpoint_path <ckpt_path>
-
+```
 To evaluate OOD, run
-
+```
 python src/evaluate.py --checkpoint_path <ckpt_path> --type ood
+```
 
 NOTE: <ckpt-path> is the checkpoints saved for the base resnet model. 
 NOTE: src/dataloaders.py needs to be modified with the actual dataset path on machine. 
