@@ -1,3 +1,9 @@
+# ConBias
+This repository contains code for the paper titled "Visual Data Diagnosis and Debiasing with Concept Graphs",to appear in _Advances in Neural Information Processing Systems (NeurIPS), 2024._
+
+_**Abstract**_ - 
+_The widespread success of deep learning models today is owed to the curation of extensive datasets significant in size and complexity. However, such models frequently pick up inherent biases in the data during the training process, leading to unreliable predictions. Diagnosing and debiasing datasets is thus a necessity to ensure reliable model performance. In this paper, we present CONBIAS, a novel framework for diagnosing and mitigating Concept co-occurrence Biases in visual datasets. CONBIAS represents visual datasets as knowledge graphs of concepts, enabling meticulous analysis of spurious concept co-occurrences to uncover concept imbalances across the whole dataset. Moreover, we show that by employing a novel clique-based concept balancing strategy, we can mitigate these imbalances, leading to enhanced performance on downstream tasks. Extensive experiments show that data augmentation based on a balanced concept distribution augmented by CONBIAS improves generalization performance across multiple datasets compared to state-of-the-art methods. We will make our code and data publicly available._
+
 ## Datasets
 
 We use [Waterbirds](https://github.com/anniesch/jtt/tree/master), [UrbanCars](https://github.com/facebookresearch/Whac-A-Mole), and [Coco-GB](https://github.com/datamllab/Mitigating_Gender_Bias_In_Captioning_System). Modify the paths in the scripts below to the location where you have saved these datasets. 
@@ -54,4 +60,19 @@ python src/evaluate.py --checkpoint_path <ckpt_path> --type ood
 
 NOTE: <ckpt-path> is the checkpoints saved for the base resnet model. 
 NOTE: src/dataloaders.py needs to be modified with the actual dataset path on machine. 
+
+## Citation
+
+If you found our work useful, please consider citing it:
+
+```
+@article{Chakraborty2024VisualDD,
+  title={Visual Data Diagnosis and Debiasing with Concept Graphs},
+  author={Rwiddhi Chakraborty and Yinong Oliver Wang and Jialu Gao and Runkai Zheng and Cheng Zhang and Fernando De la Torre},
+  journal={ArXiv},
+  year={2024},
+  volume={abs/2409.18055},
+  url={https://api.semanticscholar.org/CorpusID:272910737}
+}
+```
 
