@@ -15,7 +15,7 @@ python src/concept_sampler.py --clique_file_name
 
 The output of this file is a .json file containing the concept combinations to be up-sampled. 
 
-##Concepts 
+## Concepts 
 
 The metadata directory contains these files as well:
 
@@ -25,7 +25,7 @@ The metadata directory contains these files as well:
    
 To create the co-occurrences, we use src/co_occurence.py and src/co_occurrence_cliques.py. 
 
-##Co-occurrences
+## Co-occurrences
 
 The co-occurrence code for Waterbirds, COCO-GB, and UrbanCars are a bit different due to 
 the different nature of the metadata, i.e. we need different ways to extract the concepts stored
@@ -33,7 +33,7 @@ in the annotations. Therefore, we also share the different csv files for each da
 co_occurrence_matrix_coco.csv, co_occurrence_matrix_urbancars.csv, co_occurrence_matrix_waterbirds.csv.
 For these particular datasets, the csv files and the code are not required.
 
-##Training and evaluation
+## Training and evaluation
 
 To train ConBias, run
 ```
