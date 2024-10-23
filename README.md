@@ -1,3 +1,7 @@
+## Datasets
+
+We use [Waterbirds]([url](https://github.com/anniesch/jtt/tree/master)), [UrbanCars]([url](https://github.com/facebookresearch/Whac-A-Mole)), and [Coco-GB]([url](https://github.com/datamllab/Mitigating_Gender_Bias_In_Captioning_System)). Modify the paths in the scripts below to the location where you have saved these datasets. 
+
 
 ## Cliques
 
@@ -10,18 +14,18 @@ For each dataset, we have:
 3. clique_dict_final_urbancars.pkl: The cliques for Urbancars
 
 To create the imbalanced clique set, we can simply run:
-
+```
 python src/concept_sampler.py --clique_file_name
-
+```
 The output of this file is a .json file containing the concept combinations to be up-sampled. 
 
 ## Concepts 
 
 The metadata directory contains these files as well:
 
-1. concepts_generation.json: Concepts to be sampled for Waterbirds
-2. concepts_generation_coco.json: Concepts to be sampled for COCO-GB
-3. concepts_generation_urbancars.json: Concepts to be sampled for UrbanCars
+1. concepts_generation.json: Concepts to be sampled for Waterbirds.
+2. concepts_generation_coco.json: Concepts to be sampled for COCO-GB.
+3. concepts_generation_urbancars.json: Concepts to be sampled for UrbanCars.
    
 To create the co-occurrences, we use src/co_occurence.py and src/co_occurrence_cliques.py. 
 
